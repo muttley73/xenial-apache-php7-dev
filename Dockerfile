@@ -3,6 +3,7 @@ FROM ubuntu:xenial
 RUN useradd webmgr -u 1000
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
+	git /
     	apache2 \
 	php7.0 \
 	php7.0-mysql \
