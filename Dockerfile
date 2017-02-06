@@ -17,7 +17,8 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 	php7.0-mbstring \
 	php7.0-mcrypt \ 
 	curl \
-	lynx-cur
+	lynx-cur \
+	vim
 
 # Enable apache mods.
 RUN a2enmod php7.0
