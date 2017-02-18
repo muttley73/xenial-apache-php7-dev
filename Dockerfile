@@ -40,7 +40,7 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 # Expose apache.
 EXPOSE 80
 
-VOLUME ["/var/www/html", "/var/log/apache2", "/etc/apache2/sites-enabled", "/etc/apache2/envvars", "/etc/php/7.0/apache2/"]
+VOLUME ["/var/www/html", "/var/log/apache2", "/etc/apache2/sites-enabled", "/etc/apache2/", "/etc/php/7.0/apache2/"]
 
 
 CMD /usr/sbin/apache2ctl -D FOREGROUND
