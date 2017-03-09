@@ -20,6 +20,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 	php7.0-zip \
 	curl \
 	lynx-cur \
+	php-xdebug \
 	vim
 
 # Enable apache mods.
