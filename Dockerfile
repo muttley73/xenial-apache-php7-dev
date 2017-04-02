@@ -1,6 +1,7 @@
 FROM ubuntu:xenial
 
-RUN useradd webmgr -u 1000
+RUN useradd webmgr -u 600
+RUN useradd user_dev -u 1000
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
 	git \
