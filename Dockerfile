@@ -27,6 +27,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 # Enable apache mods.
 RUN a2enmod php7.0
 RUN a2enmod rewrite
+RUN a2enmod ssl
 
 run pecl install mongodb
 run echo "extension=mongodb.so" >> /etc/php/7.0/apache2/php.ini
