@@ -6,26 +6,26 @@ RUN useradd user_dev -u 1000
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
 	git \
     	apache2 \
-	php7.0 \
-	php7.0-mysql \
-	libapache2-mod-php7.0 \
-	php7.0-curl \
-	php7.0-cli \
-	php7.0-json \
-	php7.0-sqlite3 \
-	php7.0-intl \
-	php7.0-dev \
-	php7.0-gd \
-	php7.0-mbstring \
-	php7.0-mcrypt \ 
-	php7.0-zip \
+	php.7.3 \
+	php.7.3-mysql \
+	libapache2-mod-php.7.3 \
+	php.7.3-curl \
+	php.7.3-cli \
+	php.7.3-json \
+	php.7.3-sqlite3 \
+	php.7.3-intl \
+	php.7.3-dev \
+	php.7.3-gd \
+	php.7.3-mbstring \
+	php.7.3-mcrypt \ 
+	php.7.3-zip \
 	curl \
 	lynx-cur \
 	php-xdebug \
 	vim
 
 # Enable apache mods.
-RUN a2enmod php7.0
+RUN a2enmod php.7.3
 RUN a2enmod rewrite
 RUN a2enmod ssl
 
